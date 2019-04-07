@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<p>
+			动物
+		</p>
+		<ul>
+			<li>
+				狗
+			</li>
+			<li>
+				<b>猫</b>
+			</li>
+			<li>
+				狮子
+			</li>
+		</ul>
+		<p>
+			单击按钮显示动物
+		</p>
+		<button onclick="bu()">
+			单击按钮显示列表
+		</button>
+		<div id="menu"></div>
+		<script>
+			function bu() {
+				var liebiao = document.getElementsByTagName("ul");
+				for (var i = 0; i < liebiao.length; i++) {
+					document.getElementById("menu").innerHTML += liebiao[i].innerHTML + "<br/>";
+
+				}
+
+			}
+		</script>
+
+	</body>
+</html>

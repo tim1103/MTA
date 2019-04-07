@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<script>
+			function 数学(运算, a, b) {
+				switch(运算) {
+				case "乘法":
+				return 乘法(a,b);
+				case "除法":
+				return 除法(a,b);
+				}
+				function 乘法(x,y){
+				return x*y;
+				}
+				function 除法(n,d){
+				return n/d;
+				}
+			}
+			alert(数学("乘法", 5, 4));
+		</script>
+	</body>
+</html>

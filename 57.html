@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<script>
+		function 闰年(年份){
+		var 双闰年=(年份%4==0);
+		双闰年=双闰年&&(年份%100==0);
+		双闰年=双闰年&&(年份%400==0);
+		return 双闰年;
+		}
+		alert(闰年(1900));
+		</script>
+	</body>
+</html>

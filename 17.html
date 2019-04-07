@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<script>
+			function 票价(年龄) {
+				var 价格 = 120;
+				if (年龄 < 5 || 年龄 > 65) {
+					价格 = 0;
+				}
+				if (年龄 >= 5 && 年龄 < 18) {
+                    价格=65;
+				}
+				return 价格;
+			}
+
+			alert(票价(1));
+		</script>
+	</body>
+</html>

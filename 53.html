@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<p id="para">
+			输入
+		</p>
+		<input type="text" id="box" onchange="更新()" value=""/>
+		<script>
+		var 输出=document.getElementById("para");
+		var 输入=document.getElementById("box");
+		function 更新(){
+		输出.innerHTML=输入.value;
+		输入.style.display="none";
+		}
+		</script>
+	</body>
+</html>

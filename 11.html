@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="UTF-8">
+		<title>导航</title>
+	</head>
+	<body>
+		<script>
+						
+			function 调整月份(值) {
+				var nowdate = new Date();
+				var lessdate = nowdate.getMonth();
+				nowdate.setMonth(值+lessdate);
+				//return nowdate;
+				return nowdate.toDateString();
+			}
+			
+			alert(调整月份(4));
+			
+		</script>
+	</body>
+</html>
